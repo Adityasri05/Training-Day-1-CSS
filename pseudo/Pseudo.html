@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+/* Link hover effect */
+    a {
+        color: teal;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: crimson;
+        text-decoration: underline;
+    }
+
+    /* A button that lifts on hover */
+    .btn {
+        background: teal;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+    background: #005f5f;
+    }
+
+    /* Highlight a focused input */
+        input:focus {
+        outline: 2px solid teal;
+    }
+
+    /* Zebra-striping for table rows */
+        table {
+        border-collapse: collapse;
+    }
+
+    tr:nth-child(even) {
+        background: #f2f2f2;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 50%;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Add a star before each feature */
+    .features li::before {
+        content: "★ ";
+        color: gold;
+    }
+
+</style>
+<body>
+    <h1>Pseudo-class &amp; Pseudo-element Example</h1>
+
+    <p>
+        <!-- Hover Link -->
+        Visit
+        <a href="https://example.com" target="_blank">
+            Example Website
+        </a>
+    </p>
+
+    <!-- Hover Button -->
+    <button class="btn">Hover Me</button>
+
+    <!-- Focus Input -->
+    <h2>Input Focus</h2>
+    <input type="text" placeholder="Click here to focus">
+
+    <!-- Zebra Table -->
+    <h2>Student Marks</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td>92</td>
+        </tr>
+         <tr>
+        <td>David</td>
+        <td>88</td>
+    </tr>
+    </table>
+
+    <!-- List with Stars -->
+    <h2>Features</h2>
+
+    <ul class="features">
+        <li>Responsive Design</li>
+        <li>Fast Performance</li>
+        <li>Easy to Use</li>
+        <li>Cross-browser Support</li>
+    </ul>
+</body>
+</html>

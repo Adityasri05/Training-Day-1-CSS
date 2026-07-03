@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+/* Navigation links */
+nav a {
+    display: inline-block; /* Now padding and margin work */
+    padding: 10px 15px;
+}
+
+/* A banner pinned to the top while scrolling */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: navy;
+    color: white;
+    z-index: 100;
+}
+
+/* The card acts as the positioning anchor */
+.card {
+    position: relative;
+}
+
+/* A badge nudged onto the corner of a card */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+/* display */
+/* Menu using Flexbox */
+.menu {
+    display: flex;
+    align-items: center;          /* Vertically center items */
+    justify-content: space-between; /* Spread links across the bar */
+    gap: 20px;
+    padding: 15px;
+    background: #222;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Three equal columns that wrap on small screens */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    flex: 1; /* Each card takes an equal share */
+}
+</style>    
+</body>
+</html>
